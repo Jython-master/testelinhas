@@ -177,19 +177,6 @@
 
         <!-- main js file -->
 
-        <script src="js2/front.js"></script>        
-            <script>
-            $().ready(function(){
-                <?php foreach($nameee as $artist){ ?>
-                $("#music<?php echo $artist->getId(); ?>").click(function(){
-                    var myMusic = document.getElementById("<?php echo $artist->getArquivo(); ?>");
-                    audio.myMusic();
-                }
-                );
-                <?php } ?>
-            });
-            </script>
-
     </body>
 </html>
                                <?php }
