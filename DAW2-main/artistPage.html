@@ -1,0 +1,39 @@
+<style>
+            #intro .item {
+        background: url('img/<?php echo $bbbbb->getCover(); ?>') top center no-repeat;
+            }
+        </style>
+            <div id="intro" class="clearfix">
+                <div class="item">
+                    <div class="container">
+                        <div class="row">
+
+                            <h1 data-animate="fadeInDown">Search your Favorite Albuns and Songs by <?php echo $bbbbb->getName(); ?></h1>
+                            <p  class="message" data-animate="fadeInUp">Just type the name of the album or song you want to listen to</p>
+
+
+                            <div class="col-md-6 col-md-offset-3" data-animate="fadeInUp">
+                                <form action="" method="get" id="frm-landingPage1" class="form">
+                                    <input type="hidden" name="id" value="<?php echo $_GET['id'];?>">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" placeholder="Albuns or songs" name="email" id="frm-landingPage1-email" >
+
+                                        <span class="input-group-btn">
+
+                                            <input class="btn btn-default" type="submit" value="Submit" name="_submit" id="frm-landingPage1-submit">
+                                        </span>
+
+                                    </div>
+                                    <!-- /input-group -->
+                                </form>
+
+                                <p class="text-small">See how you found them</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- *** INTRO IMAGE END *** -->
+

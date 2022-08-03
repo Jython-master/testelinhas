@@ -1,0 +1,35 @@
+
+
+                            <h1 data-animate="fadeInDown"><?php echo $albummm->getName(); ?></h1>
+                             <p class="lead"><a href="UpdateAlbum.php?id=<?php echo $albummm->getId(); ?>">Update</a> <?php echo $albummm->getName(); ?></p>
+                            <p  class="message" data-animate="fadeInUp">By <?php echo $artis->selectname($albummm->getArtist()); ?>| Release Year: <?php echo $albummm->getRelease(); ?>| Genre: <?php 
+                         $ge = new genredb();
+                         echo $ge->selectOne($albummm->getGenre()); ?></p>
+                            <div class="col-md-6 col-md-offset-3" data-animate="fadeInUp">
+                                <form action="" method="get" id="frm-landingPage1" class="form">
+                                    <input type="hidden" name="id" value="<?php echo $_GET['id']; ?>">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" placeholder="Search songs within the album" name="email" id="frm-landingPage1-email" >
+
+                                        <span class="input-group-btn">
+
+                                            <input class="btn btn-default" type="submit" value="Submit" name="_submit" id="frm-landingPage1-submit">
+                                        </span>
+
+                                    </div>
+                                    <!-- /input-group -->
+                                </form>
+
+                                <p class="text-small">See how you found them</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- *** INTRO IMAGE END *** -->
+
+
+
+           
